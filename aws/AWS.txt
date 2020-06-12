@@ -1,0 +1,11 @@
+it is a cloud base service which provides different services as per our neeed and it is based on pay on demand and use
+we have to pay for the time we used , it is like a something we use on rent and pay only for howmuch we use
+
+Example:
+company like a flipkart which has 1M visitors on normal days but when it has a sale there are 20M visitors so , to handle that much of visitors ,
+it has to setup many extra devices , servers, networks and all which is very costly , and that is also a fact that these nuch of trafffic is only on sale
+so for short period of time it is not worthy  to invest that much of money , so in such case this cloud service is useful and many companies do that 
+
+so, AWS provides us such IT related services on demand and we have have to pay whatever we use,
+
+
