@@ -1,3 +1,10 @@
 amazon.ca
+1. ESP32
+2. GPS module
+
 digikey.com
+LPC2148
+
 utsource.net
+1. GSM SIM900
+2. pulse rate heart sensor
