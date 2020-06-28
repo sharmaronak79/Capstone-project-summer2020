@@ -1,6 +1,6 @@
 # Capstone-project-summer2020
 
-GROUP 7: AMANDEEP KAUR, RONAKKUMAR SHARMA, SHWETA GULATI
+GROUP 7: AMANDEEP KAUR, RONAKKUMAR SHARMA, SHWETA 
 
 Project Title: IOT based Smart wearable safety gadget
 
