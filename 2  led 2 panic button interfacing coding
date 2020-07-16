@@ -1,0 +1,47 @@
+#include<lpc214x.h>
+#define input IOPIN1
+
+int i,j;
+int delay(int time)
+{
+for (i=0;i<1000;i++)
+{
+for(j=0;j<time;j++);
+}
+}
+void main()
+{
+PINSEL0=00000000;	// value of p0.0 is selected as GPIO.
+
+PINSEL2=00000000;
+	IODIR0=0x00000005; //choose 0 and 2 pins as an output
+
+	
+
+	while(1)
+	{
+		
+if (input & (1<<16))
+{
+IOSET0=(1<<0);
+delay(1000);
+		IOCLR0=(1<<0);
+	delay(1000);
+	
+}
+
+
+else if (input & (1<<17))
+{
+IOSET0=(1<<2);
+delay(1000);
+IOCLR0=(1<<2);
+delay(1000);
+		
+}
+}
+}
+
+
+
+
