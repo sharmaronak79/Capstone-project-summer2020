@@ -1,0 +1,29 @@
+#include<LPC214x.h>
+int i,j,k,time;
+int delay (int time) //delay for on and off leds
+{
+	for (i=0;i<500;i++)
+	{
+		for (j=0;j<time;j++);
+	}
+}
+int main()
+{
+	while(1)
+	{
+			PINSEL0=0x00000000; //make port 0 as a gpio
+		IODIR0=0X00000007;     //make pin0,1,2 as a output
+		
+		for(k=0;k<=3;k++)
+		{
+
+		IOSET0=(1<<k); //on the leds
+		delay(500);
+		IOCLR0=(1<<k); //off the leds
+	  delay(500);
+		}
+	}
+}
+
+		
+		
