@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\startup.o"
+".\gsm_embt.o"
+--strict --scatter ".\gsm_embt.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\gsm_embt.map" -o .\gsm_embt.axf

@@ -1,0 +1,6 @@
+Dependencies for Project 'gsm_embt', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x532C9A82)(--cpu ARM7TDMI --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\gsm_embt.c)(0x5F114AD1)(-c --cpu ARM7TDMI -D__EVAL -g -O0 --apcs=interwork -I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\Philips-o .\gsm_embt.o --omf_browse .\gsm_embt.crf --depend .\gsm_embt.d)
+I (C:\Keil\ARM\Inc\Philips\lpc214x.h)(0x532C9A98)
+I (gsm.h)(0x5F113A99)
+F (.\gsm.h)(0x5F113A99)()
