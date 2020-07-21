@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'SERIAL TX.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"serial tx.o"'
+### List of Objects: adding '"startup.o"'
+### ADS-LD Command completed:
+--cpu ARM7TDMI "serial tx.o" "startup.o" 
+--strict --scatter "SERIAL TX.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\SERIAL TX.map" -o "SERIAL TX.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'SERIAL TX.axf'
+### ADS-LD Command File: 'SERIAL TX.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'SERIAL TX.lnp', Handle=0x00000164
+### Writing '.lnp' file
+### ADS-LD Command file 'SERIAL TX.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
