@@ -25,13 +25,13 @@ while(1)
  {
    gps();
     Uart1PutS("LT:");
-		 Uart1PutS(lat);
+		 Uart1PutS(lat);         // print latitude coordinates
 		 Uart1PutS("N");
-		 Uart1PutCh (0x0D);
+		 Uart1PutCh (0x0D);     // for new line
 	   Uart1PutS("LG:");
-		 Uart1PutS(lg);
+		 Uart1PutS(lg);         // print longitude coordinates
 		 Uart1PutS("E");
-		 Uart1PutCh (0x0D);
+		 Uart1PutCh (0x0D);    // for new line
  }
 }
 
@@ -40,7 +40,7 @@ void gps()
 {
    while(finish==0){
     
-     Gpsdata = Uart0GetCh();
+     Gpsdata = Uart0GetCh();               // data from GPS get into the GPSDATA
         flg = 1;
       if( Gpsdata=='$' && pos_cnt == 0)   // finding GPRMC header
         pos_cnt=1;
