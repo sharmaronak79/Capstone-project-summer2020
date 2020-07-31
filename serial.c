@@ -25,5 +25,5 @@ void  Uart1PutS(unsigned char *str)  //A function to send a string on UART1
 unsigned char Uart1GetCh (void)		// Read character from Serial Port   
 {            
   while (!(U1LSR & 0x01));             // wait here till 0th bit become 1 indicating that receiving has been done and data ready to be read
-  return (U1RBR);
+  return (U1RBR);                     // RBR that is receiver buffer register contains the data that can be read
 }
