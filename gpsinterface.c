@@ -1,6 +1,6 @@
 #include <lpc214x.h>
 #include "serial.h"
-#include "lcd.h"
+
 
 unsigned int j;
 
@@ -21,19 +21,19 @@ void gps(void);
 int main(void)
 {
 
-    lcd_init();
- Uart0Init();
+    
+ Uart1Init();
 while(1)
  {
    gps();
-   lcdcmd(0x80);
-   DisplayLCD1("LT:");
-  DisplayLCD1(lat);
-  DisplayLCD1("N");
-   lcdcmd(0xC0);
-   DisplayLCD1("LG:");
-  DisplayLCD1(lg);
-  DisplayLCD1("E");
+    Uart1PutS("LT:");
+		 Uart1PutS(lat);
+		 Uart1PutS("N");
+		 Uart1PutCh (0x0D);
+	   Uart1PutS("LG:");
+		 Uart1PutS(lg);
+		 Uart1PutS("E");
+		 Uart1PutCh (0x0D);
  }
 }
 
@@ -48,7 +48,7 @@ void gps()
         pos_cnt=1;
       if( Gpsdata=='G' && pos_cnt == 1)
          pos_cnt=2;
-      if( Gpsdata=='P' && pos_cnt == 2)
+      if( Gpsdata=='N' && pos_cnt == 2)
          pos_cnt=3;
       if( Gpsdata=='R' && pos_cnt == 3)
          pos_cnt=4;
@@ -72,9 +72,9 @@ void gps()
        }
 
       if( Gpsdata == '*' && com_cnt >= 5 && flg == 1){
-         lat[lat_cnt] ='\0';             // end of GPRMC message
+         lat[lat_cnt] ='\0';             // end of GNRMC message
         lg[log_cnt]  = '\0';
-     com_cnt = 0;                      // end of GPRMC message
+     com_cnt = 0;                      // end of GNRMC message
         lat_cnt = 0;
          log_cnt = 0;
          flg     = 0;
