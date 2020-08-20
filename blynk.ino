@@ -18,7 +18,7 @@
 
 const char* ssid = "  WAQAS";   //username
 const char* password = "Rogers3082";  //enter password
-char auth[] = "i1K6e0AKRGTDsm_sH8hpmp2-OPMAyggD";   //type authetication token
+char auth[] = "i1K6e0AKRGTDsm_sH8hpmp2-OPMAyggD";   //type authetication token which is received upon creating a new project in Blynk
 
 String my_Local_IP;
 
@@ -30,7 +30,7 @@ void capture()
   digitalWrite(LED,HIGH);   //set led status as high
   uint32_t number = random(40000000);
   Blynk.notify("Someone is attacking");   //set blynk notifications
-  Serial.println("http://"+my_Local_IP+"/capture?_cb="+ (String)number);
+  Serial.println("http://"+my_Local_IP+"/capture?_cb="+ (String)number);   // image link sent to serial monitor
   Blynk.setProperty(V1, "urls", "http://"+my_Local_IP+"/capture?_cb="+(String)number);  //set visions v1
    Blynk.setProperty(V2, "urls", "http://"+my_Local_IP+"/capture?_cb="+(String)number);   //set vision v2
   Blynk.setProperty(V3, "urls", "http://"+my_Local_IP+"/capture?_cb="+(String)number);     //set vision v3
