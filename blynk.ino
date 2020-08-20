@@ -1,7 +1,7 @@
 #include "esp_camera.h"
 #include <WiFi.h>
 #include <WiFiClient.h>
-#include <BlynkSimpleEsp32.h>
+#include <BlynkSimpleEsp32.h>   // header file of Blynk app for ESP32
 
 
 // Select camera model
@@ -119,7 +119,7 @@ void setup() {
   Serial.print(WiFi.localIP());
   my_Local_IP = WiFi.localIP().toString();
   Serial.println("' to connect");
-  Blynk.begin(auth, ssid, password);
+  Blynk.begin(auth, ssid, password);   // begin the function of connecting ESP32 with Blynk and internet
 }
 
 void loop() {
