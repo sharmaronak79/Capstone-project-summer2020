@@ -124,7 +124,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Blynk.run();
+  Blynk.run();                         // keeps connection alive,send and receive data
   if(digitalRead(BUTTON) == HIGH)     //if the button is pressed then picture will be clicked
   capture();
 }
