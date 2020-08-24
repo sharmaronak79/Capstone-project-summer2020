@@ -13,7 +13,7 @@ Hardware requirement:
 •	Pulse rate sensor
 •	ESP32(camera and WiFi) 
 •	Panic button
-•	Lithium ion battery
+•	Lithium Polymer battery
 
 Basically ,in this project there is a panic button which is when pressed sends the current location of the user to the preregistered contacts indicating that the person is in trouble.Also when the output of pulse rate sensor increases the threshold value,then alaso device gets activated.
 
