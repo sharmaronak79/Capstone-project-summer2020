@@ -20,3 +20,6 @@ Basically ,in this project there is a panic button which is when pressed sends t
 
 An additional feature of this system is a camera module that is used for capturing the pictures of the related situation, location, and attacker. Moreover, Cloud is utilized for the storage of such pictures. These images can be used by police for further investigation purposes as they can compare such images with the government record. Apart from this, police can easily search the culprit, and chances of such practices will be reduced
 
+
+
+Today on the 24th of august all hardware connection and testing done, and hopefully running successfully...
